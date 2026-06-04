@@ -32,7 +32,7 @@ int cmd_list() {
   }
 
   // list all the todos
-  char buf[100];
+  char buf[BUF_SIZE];
   int line = 0;
   while (fgets(buf, sizeof(buf), fptr) != NULL) {
     line++;
